@@ -246,6 +246,9 @@
     "BSFNIRSHeader": {
       "title": "BFNIRS extended header",
       "type": "object",
+      "required": [
+        "Version"
+      ],
       "properties": {
         "Version": {
           "title": "BFNIRS header version",
@@ -317,8 +320,15 @@
           "enum": [
             "Sparse",
             "High density",
-            "Ultra high density (<12mm)"
-          ]
+            "Ultra high density"
+          ],
+          "options": {
+            "enum_titles": [
+              "Sparse",
+              "High density",
+              "Ultra high density (average optode spacing < 12mm)"
+            ]
+          }
         },
         "AvgChannelDistances": {
           "title": "Average channel distance (mm)",
