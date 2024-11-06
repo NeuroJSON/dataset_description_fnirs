@@ -491,7 +491,7 @@
                 "type": "integer"
               },
               "BlockPerRun": {
-                "title": "Blocks per block",
+                "title": "Blocks per run",
                 "type": "integer"
               },
               "SessionDuration": {
